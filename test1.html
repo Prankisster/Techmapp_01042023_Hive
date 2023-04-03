@@ -5,7 +5,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
-      /* Add some basic styling to the page */
       body {
         font-family: Arial, sans-serif;
       }
@@ -96,10 +95,6 @@
 </div>
 
 <script>
-//   function opengraph(){
-//     window.open("file:///C:\\Users\\91983\\Desktop\\test2.html");
-//   }
-
   function addTestScoreInput() {
     // Create a new input element
     var input = document.createElement('input');
@@ -112,10 +107,10 @@
   }
 
 //   function generateBarGraph() {
-//   // Get the value of the course aptitude input
+
 //   var courseAptitude = document.getElementById('course-aptitude').value;
 
-//   // Load the Excel file using SheetJS
+
 //   var xhr = new XMLHttpRequest();
 //   xhr.open('GET', 'baseDataSet_1.xlsx', true);
 //   xhr.responseType = 'arraybuffer';
@@ -123,7 +118,6 @@
 //     var data = new Uint8Array(xhr.response);
 //     var workbook = XLSX.read(data, {type: 'array'});
 
-//     // Get the data for the corresponding course aptitude
 //     var sheetName = 'Sheet1';
 //     var worksheet = workbook.Sheets[sheetName];
 //     var range = XLSX.utils.decode_range(worksheet['!ref']);
@@ -144,7 +138,6 @@
 //       }
 //     }
 
-//     // Create the bar chart
 //     var ctx = document.getElementById('bar-chart').getContext('2d');
 //     var chart = new Chart(ctx, {
 //       type: 'bar',
