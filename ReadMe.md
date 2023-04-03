@@ -2,10 +2,13 @@
 
 Welcome to our repository! We are Prakhar Gupta and Abhishek Sahjwani, and we had the opportunity to work on an innovative project provided by TechMapp, a Hyderabad-based start-up. We chose to work on an interactive timeline/progress tracker website, which we found lacking in personalization in most existing progress tracker websites/apps.
 
+**TEAM: THE HIGH TABLE**
+
 ## Table of Contents
 - [Problem Statement](#problem-statement)
 - [Our Solution](#our-solution)
 - [Benefits](#benefits)
+- [Further Improvements](#futher-improvements)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -18,5 +21,12 @@ We proposed a framework where the user har to undertake a general course aptitud
 ## Benefits
 Our solution provides learners with personalized recommendations, allowing them to build a strong foundation before moving on to more advanced concepts. 
 
+## Further Improvements
+We planned of adding voice assistant/search feature to our solution to make it accessible by the differently abled. We also plan on taking into account the user behaviour before reccommending videos/products to them and also analyse how they consume content.
+
 ## Acknowledgments
 We both work with AI/ML and had limited experience in website development. We developed an original ML algorithm for this project, doing the math behind each step after thorough research. We completed this project within five hours, thanks to the support of our mentors at Hack4wire and TechMapp, and the conducive working environment provided by Hive in Gachibowli, Hyderabad.
+
+Our github: 
+- Prakhar Gupta: prak12g
+- Abhishek Sahjwani: Prankisster
