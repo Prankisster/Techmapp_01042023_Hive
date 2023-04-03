@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Progress Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      /* Add some basic styling to the page */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      #form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"], select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learning Progress Tracker</h1>
+    <div id="form-container">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="">--Select a subject--</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="history">Arts</option>
+      </select>
+
+      <button onclick="showCourseAptitudeInput()">Take IQ Test</button>
+      
+      <div id="course-aptitude-input" class="hidden">
+        <label for="course-aptitude">Course Aptitude:</label>
+        <input type="text" id="course-aptitude" name="course-aptitude" placeholder="Enter your course aptitude">
+      </div>
+
+      <div id="form-container">
+        <button onclick="addTestScoreInput()">Add Test Score</button>
+        <div id="test-score-inputs">
+            <div>
+              <label for="test-score-2">Enter test score 2:</label>
+              <input type="text" id="test-score-2" name="test-score-2" placeholder="Enter test score 2">
+            </div>
+            <div>
+              <label for="test-score-3">Enter test score 3:</label>
+              <input type="text" id="test-score-3" name="test-score-3" placeholder="Enter test score 3">
+            </div>
+            <div>
+              <label for="test-score-4">Enter test score 4:</label>
+              <input type="text" id="test-score-4" name="test-score-4" placeholder="Enter test score 4">
+            </div>
+          </div>
+          
+        <button onclick="opengraph()">Show Graph</button>
+
+<div id="test-score-inputs">
+</div>
+
+<script>
+//   function opengraph(){
+//     window.open("file:///C:\\Users\\91983\\Desktop\\test2.html");
+//   }
+
+  function addTestScoreInput() {
+    // Create a new input element
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.name = 'test-score[]';
+    input.placeholder = 'Enter test score';
+
+    // Add the input element to the test score inputs div
+    document.getElementById('test-score-inputs').appendChild(input);
+  }
+
+//   function generateBarGraph() {
+//   // Get the value of the course aptitude input
+//   var courseAptitude = document.getElementById('course-aptitude').value;
+
+//   // Load the Excel file using SheetJS
+//   var xhr = new XMLHttpRequest();
+//   xhr.open('GET', 'baseDataSet_1.xlsx', true);
+//   xhr.responseType = 'arraybuffer';
+//   xhr.onload = function(e) {
+//     var data = new Uint8Array(xhr.response);
+//     var workbook = XLSX.read(data, {type: 'array'});
+
+//     // Get the data for the corresponding course aptitude
+//     var sheetName = 'Sheet1';
+//     var worksheet = workbook.Sheets[sheetName];
+//     var range = XLSX.utils.decode_range(worksheet['!ref']);
+//     var rowData = [];
+//     for (var i = range.s.r; i <= range.e.r; i++) {
+//       var row = [];
+//       for (var j = range.s.c; j <= range.e.c; j++) {
+//         var cell = worksheet[XLSX.utils.encode_cell({r: i, c: j})];
+//         if (cell && cell.v) {
+//           row.push(cell.v);
+//         } else {
+//           row.push('');
+//         }
+//       }
+//       if (row[0] === courseAptitude) {
+//         rowData = row;
+//         break;
+//       }
+//     }
+
+//     // Create the bar chart
+//     var ctx = document.getElementById('bar-chart').getContext('2d');
+//     var chart = new Chart(ctx, {
+//       type: 'bar',
+//       data: {
+//         labels: ['Test 1', 'Test 2', 'Test 3'],
+//         datasets: [{
+//           label: 'Test Scores',
+//           backgroundColor: '#4CAF50',
+//           data: rowData.slice(1)
+//         }]
+//       },
+//       options: {
+//         legend: {
+//           display: false
+//         },
+//         scales: {
+//           yAxes: [{
+//             ticks: {
+//               beginAtZero: true
+//             }
+//           }]
+//         }
+//       }
+//     });
+//   };
+//   xhr.send();
+// }
+
+</script>
+
+      </div>
+
+      <script>
+        function showCourseAptitudeInput() {
+          // Show the course aptitude input box
+          document.getElementById('course-aptitude-input').classList.remove('hidden');
+
+          // Redirect to the IQ test website
+          window.open('https://testyourself.psychtests.com/');
+        }
+      </script>
+
+    </div>
+  </body>
+</html>
