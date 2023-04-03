@@ -7,6 +7,7 @@ Welcome to our repository! We are Prakhar Gupta and Abhishek Sahjwani, and we ha
 ## Table of Contents
 - [Problem Statement](#problem-statement)
 - [Our Solution](#our-solution)
+- [Code](#code)
 - [Benefits](#benefits)
 - [Further Improvements](#futher-improvements)
 - [Acknowledgments](#acknowledgments)
