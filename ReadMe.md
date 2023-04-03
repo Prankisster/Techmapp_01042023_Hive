@@ -7,7 +7,6 @@ Welcome to our repository! We are Prakhar Gupta and Abhishek Sahjwani, and we ha
 ## Table of Contents
 - [Problem Statement](#problem-statement)
 - [Our Solution](#our-solution)
-- [Code](#code)
 - [Benefits](#benefits)
 - [Further Improvements](#futher-improvements)
 - [Acknowledgments](#acknowledgments)
@@ -18,8 +17,6 @@ In online courses, there are often series of videos on a particular topic, but t
 
 ## Our Solution
 We proposed a framework where the user har to undertake a general course aptitude test, which would provide a score to help our recommendation system personalize the learning experience for each user. After watching a recommended video, an assessment test would evaluate the learner's understanding, with questions categorized as verbal comprehension, perceptual reasoning, and efficiency (memory + speed). Based on these scores, our progress tracker would show the percentage change before and after watching the video, and the system would recommend additional videos to address areas where the learner struggled.
-
-##Code
 In the above python file named "CODE" the explaination of the algorithm which we came up with is given. There are comments which explain each block of code. 
 
 ## Benefits
